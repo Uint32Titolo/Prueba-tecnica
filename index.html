@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- iconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- Estilos -->
+    <link rel="stylesheet" href="style.css">
+    <title>Prueba Tecnica</title>
+</head>
+<body>
+    <div class="topnav">
+        <div class="row">
+            <div class="column"></div>
+
+            <div class="columnCenter">
+                <a href="lista.html">Lista Fromulario</a>
+                <a class="active" href="index.html">Formulario</a>
+                <div class="logo-image">
+                    <img src="icon.png" width="50px" class="img-fluid">
+                </div>
+            </div>
+
+            <div class="column"></div>
+        </div>
+
+    </div>
+    <div class="container">
+
+        <div class="row">
+            <div class="column"></div>
+            <div class="columnCenter">
+                <h2>
+                    Nuevo formulario
+                </h2>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since</p>
+                <form>
+
+                    <!-- <div class="column"> -->
+                    <h4 style="color:blue">Datos del Vendedor</h4>
+                    <div class="wrapper">
+                        <div style="grid-column: 1/3; grid-row: 1">
+                            <label for="nombreApellido">Nombre y Apellido</label><br>
+                            <input class="ip1" size="50" type="text" id="nombreApellido" name="nombreApellido" onblur="validarNomAp(id)"><br>
+                        </div>
+                        <div style="grid-column: 3; grid-row: 1">
+                            <label for="run">Run Vendedor:</label><br>
+                            <input class="ip1" type="text" id="run" name="run" onblur="validarRut(id)"><br>
+                        </div>
+                    </div>
+                    <br>
+
+                    <hr>
+
+                    <h4 style="color:blue">Datos del Vehiculo</h3>
+                    <div class="wrapper">
+                        <div style="grid-column: 1; grid-row: 1">
+                            <label for="patente">Patente Vehículo</label><br>
+                            <input class="ip1" type="text" id="patente" name="patente" onblur="revisarPatente(id)">
+                        </div>
+                        <div style="grid-column: 2; grid-row: 1">
+                            <label for="Marcas">Marca vehículo</label><br>
+                            <select class="ipSelect" name="Marcas" id="Marcas" onblur="validarSelectMarca(id)">
+                            </select>
+                        </div>
+                        <div style="grid-column: 3; grid-row: 1">
+                            <label for="Modelo">Modelo vehículo</label><br>
+                            <select class="ipSelect" name="Modelo" id="Modelo" onblur="validarSelectModelo(id)">
+                            </select>
+                        </div>
+                        <div style="grid-column: 1; grid-row: 2"> 
+                            <label for="color">Color vehículo</label><br>
+                            <select class="ipSelect" name="color" id="color" onblur="validarSelectColor(id)">
+                            </select>
+                        </div>
+
+
+                    </div>
+
+
+                </form>
+                <hr>
+                <div class="wrapper">
+                    <div style="grid-column: 3; grid-row: 1">
+                        <button type="button" class="button" style="padding: 14px 100px;" onclick="validarCampos()">Enviar</button>
+                    </div>
+                </div>
+ 
+                
+
+            </div>
+
+            <div class="column"></div> 
+        </div>         
+
+    </div>
+</body>
+</html>
+<script src="index.js"></script>
+<script>
+
+</script>

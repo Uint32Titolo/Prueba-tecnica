@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- iconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- Estilos -->
+    <link rel="stylesheet" href="style.css">
+    <title>Prueba Tecnica</title>
+</head>
+<body>
+    <div class="topnav" style="padding:15px;text-align:center;">
+        <a class="active" href="index.html">Formulario</a>
+        <div class="logo-image">
+            <img src="icon.png" width="50px" class="img-fluid">
+        </div>
+
+    </div>
+
+    <div style="overflow:auto">
+
+        <div class="main">
+            <div class="menu">
+
+            </div>
+            <h2>
+                Nuevo formulario
+            </h2>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since</p>
+            <form>
+
+
+                <h4 style="color:blue">Datos del Vendedor</h4>
+
+                <label for="nombreApellido">Nombre y Apellido</label><br>
+                <input class="ip1" size="30%" type="text" id="nombreApellido" name="nombreApellido" onblur="validarNomAp(id)"><br>
+                <label for="run">Run Vendedor:</label><br>
+                <input class="ip1" size="30%" type="text" id="run" name="run" onblur="validarRut(id)"><br>
+
+                <br>
+
+                <hr>
+
+                <h4 style="color:blue">Datos del Vehiculo</h3>
+                <label for="patente">Patente Vehículo</label><br>
+                <input class="ip1" size="30%" type="text" id="patente" name="patente" onblur="revisarPatente(id)"><br>
+                <label for="Marcas">Marca vehículo</label><br>
+                <select class="ipSelect" name="Marcas" id="Marcas" onblur="validarSelectMarca(id)">
+                </select><br>
+                <label for="Modelo">Modelo vehículo</label><br>
+                <select class="ipSelect" name="Modelo" id="Modelo" onblur="validarSelectModelo(id)">
+                </select><br>
+                <label for="color">Color vehículo</label><br>
+                <select class="ipSelect" name="color" id="color" onblur="validarSelectColor(id)">
+                </select><br>
+
+            </form>
+            <hr>
+            <button type="button" class="button" style="padding: 14px 100px;" onclick="validarCampos()">Enviar</button>
+        </div>
+
+    </div>
+</body>
+</html>
+<script src="index.js"></script>
+<script>
+
+</script>
